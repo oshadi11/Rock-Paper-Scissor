@@ -1,0 +1,36 @@
+.parent {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+    "s1 heading s2"
+    "s1 heading s2"
+    "player player player"
+    "player player player"
+    "vs vs vs"
+    "bot bot bot"
+    "bot bot bot";
+    gap: 8px;
+}
+.s1{
+    grid-area: s1;
+    border: 2px solid #333;
+}
+.s2{
+    grid-area: s2;
+    border: 3px solid slateblue;
+}
+.header{
+    grid-area: heading;
+}
+.player{
+    grid-area: player;
+    border: 3px slateblue;
+}
+.vs{
+    grid-area: vs;
+}
+.bot{
+    grid-area: bot;
+}
