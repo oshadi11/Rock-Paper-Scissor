@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #456436;
+}
 .parent {
     display: grid;
     height: 100vh;
@@ -15,14 +22,44 @@
 }
 .s1{
     grid-area: s1;
-    border: 2px solid #333;
+    border-radius: 20px;
+    background-color: #1c3815;
+    border: 1px solid #1c3815;
+    margin-top: 40px;
+    margin-left: 40px;
+    padding: 30px;
+    /* Glow 
+    box-shadow:
+        0 0 8px rgba(206, 68, 151, 0.288),
+        inset 0 0 15px rgba(100, 6, 64, 0.08);*/
+    
+}
+.text{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(240, 255, 241);
+    
 }
 .s2{
     grid-area: s2;
-    border: 3px solid slateblue;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-right: 40px;
+    background-color: #2A2A2A;
+    border: 1px solid #2A2A2A;
+    padding: 30px;
+        
 }
 .header{
     grid-area: heading;
+    font-family: "headerFont",sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    text-align: center;
+    color: #2A2A2A;
+    margin-top: 30px;
+
 }
 .player{
     grid-area: player;
@@ -33,4 +70,9 @@
 }
 .bot{
     grid-area: bot;
+}
+
+@font-face {
+    font-family: "headerFont";
+    src: url("assets/fonts/Strong\ Bubble.ttf");
 }
