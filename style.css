@@ -65,6 +65,7 @@ body{
     text-align: center;
     color: #2A2A2A;
     margin-top: 30px;
+    
 
 }
 .player{
@@ -78,6 +79,51 @@ body{
     grid-area: bot;
 }
 
+.player{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 20px;
+}
+.bot{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-bottom: 25px;
+}
+.player img{
+    width: 150px;
+}
+.bot img{
+    width: 150px;
+}
+.item1{
+    background-color: #0f1a23;
+    border: 2px solid #0f1a23;
+    border-radius: 15px;
+    padding: 5px;
+
+}
+.item2{
+    background-color: #0f1a23;
+    border: 2px solid #0f1a23;
+    border-radius: 15px;
+    padding: 5px;
+
+}
+.item3{
+    background-color: #0f1a23;
+    border: 2px solid #0f1a23;
+    border-radius: 15px;
+    padding: 5px;
+
+}
+.vs{
+    font-family: "vsFont",sans-serif;
+    text-align: center;
+    font-size: 40px;
+    color: #1b1a1a;
+}
 @font-face {
     font-family: "headerFont";
     src: url("assets/fonts/Strong\ Bubble.ttf");
@@ -85,4 +131,8 @@ body{
 @font-face {
     font-family: "moldieFont";
     src: url("assets/fonts/Moldie\ Demo.otf");
+}
+@font-face {
+    font-family: "vsFont";
+    src: url("assets/fonts/Black\ Crush.otf");
 }
