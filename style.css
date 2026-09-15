@@ -28,17 +28,18 @@ body{
     margin-top: 40px;
     margin-left: 40px;
     padding: 30px;
-    /* Glow 
-    box-shadow:
-        0 0 8px rgba(206, 68, 151, 0.288),
-        inset 0 0 15px rgba(100, 6, 64, 0.08);*/
+    display: flex;
+    justify-content: space-between;
     
 }
+.s1 img{
+    width: 220px;
+}
 .text{
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    font-family: "moldieFont",sans-serif;
     color: rgb(240, 255, 241);
-    
+
 }
 .s2{
     grid-area: s2;
@@ -48,7 +49,12 @@ body{
     background-color: #2A2A2A;
     border: 1px solid #2A2A2A;
     padding: 30px;
+    display: flex;
+    justify-content: space-between;
         
+}
+.s2 img{
+    width: 105px;
 }
 .header{
     grid-area: heading;
@@ -75,4 +81,8 @@ body{
 @font-face {
     font-family: "headerFont";
     src: url("assets/fonts/Strong\ Bubble.ttf");
+}
+@font-face {
+    font-family: "moldieFont";
+    src: url("assets/fonts/Moldie\ Demo.otf");
 }
